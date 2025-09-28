@@ -15,13 +15,11 @@ This is a responsive web application built using fundamental web technologies (H
 
 ## Tech Stack
 
-|....................................................................................................|
-| Category | Technology | Purpose |
-| :---------- | :----------------- | :---------------------------------------------------------------|
-| **Markup** :- HTML5 :- Provides the basic structure and input form. |
-| **Styling** :- CSS3 :- Ensures the application is visually appealing and responsive. |
-| **Logic** :- Vanilla JavaScript :- Handles DOM manipulation, form submission, and task rendering.|
-|....................................................................................................|
+| Category    | Technology         | Purpose                                                        |
+| :---------- | :----------------- | :------------------------------------------------------------- |
+| **Markup**  | HTML5              | Provides the basic structure and input form.                   |
+| **Styling** | CSS3               | Ensures the application is visually appealing and responsive.  |
+| **Logic**   | Vanilla JavaScript | Handles DOM manipulation, form submission, and task rendering. |
 
 ## Live Demo
 
