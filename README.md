@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a responsive web application built using fundamental web technologies (HTML, CSS, and vanilla JavaScript) to help users manage their daily tasks. The application currently allows users to input new tasks and display them dynamically.
+This is a responsive web application built using fundamental web technologies (HTML, CSS, and vanilla JavaScript) to help users manage their daily tasks. The application currently allows users to input new tasks and display them dynamically and toggled task status.
 
 **Current Status:** In Progress
 
@@ -10,22 +10,23 @@ This is a responsive web application built using fundamental web technologies (H
 
 - ✅ **Task Creation:** Users can input a new task using a form.
 - ✅ **Dynamic Table Display:** New tasks are immediately rendered in a structured table format on the side.
-- 💾 **(Coming Soon) Local Storage:** Tasks will persist even after the browser is closed.
+- 💾 **Local Storage:** Tasks will persist even after the browser is closed.
+- 💾 **Toggle Status** Status can be toggled as completed or pending
 - 🗑️ **(Coming Soon) To Perform CRUD Operations on Task** Ability to Create Task, Read Task, Update Task, and remove completed or unwanted tasks.
 
 ## Tech Stack
 
-| Category    | Technology         | Purpose                                                        |
-| :---------- | :----------------- | :------------------------------------------------------------- |
-| **Markup**  | HTML5              | Provides the basic structure and input form.                   |
-| **Styling** | CSS3               | Ensures the application is visually appealing and responsive.  |
-| **Logic**   | Vanilla JavaScript | Handles DOM manipulation, form submission, and task rendering. |
+| Category    | Technology         | Purpose                                                                       |
+| :---------- | :----------------- | :---------------------------------------------------------------------------- |
+| **Markup**  | HTML5              | Provides the basic structure and input form.                                  |
+| **Styling** | CSS3               | Ensures the application is visually appealing and responsive.                 |
+| **Logic**   | Vanilla JavaScript | Handles DOM manipulation, form submission, task rendering, and Toggle status. |
 
 ## Live Demo
 
-**[View the Live Application Here!](Coming-soon)**
+**[View the Live Application Here! Coming Soon](Coming-soon)**
 
-## Getting Started (For Reviewers/Others)
+## Getting Started
 
 To run this project locally, follow these simple steps:
 
