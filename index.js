@@ -12,13 +12,6 @@ function storeData() {
   localStorage.setItem("todos", JSON.stringify(todos));
 }
 
-// ---------------------------------------------------------------- Toggled Status ------------------------------
-function toggleStatus(i) {
-  todos[i].status = !todos[i].status;
-  storeData();
-  renderTodos();
-}
-
 // ---------------------------------------------------------------- Handle Submit Form ------------------------------
 function formSubmit() {
   let obj = {
@@ -32,6 +25,7 @@ function formSubmit() {
   todos.push(obj);
   storeData();
   renderTodos();
+  resetForm();
 }
 
 // ---------------------------------------------------------------- Render Todos ------------------------------
@@ -56,11 +50,60 @@ function renderTodos() {
       }
       tr.appendChild(td);
     }
-    let tdDelete = (document.createElement("td").innerText = "Delete");
-    let tdEdit = (document.createElement("td").innerText = "Edit");
+    // ---------------------------------- Delete Col----------
+    let tdDelete = document.createElement("td");
+    let btnDelete = document.createElement("button");
+    btnDelete.innerText = "Delete";
+    tdDelete.appendChild(btnDelete);
+    btnDelete.addEventListener("click", () => removeTask(i));
+
+    // ---------------------------------- Edit Col-----------
+    let tdEdit = document.createElement("td");
+    let btnEdit = document.createElement("button");
+    btnEdit.innerText = "Edit";
+    tdEdit.appendChild(btnEdit);
+    btnEdit.addEventListener("click", () => updateTodo(i));
     tr.append(tdDelete, tdEdit);
 
     tbody.appendChild(tr);
   });
 }
 renderTodos();
+
+// ---------------------------------------------------------------- Delete Todo --------------------------------
+function removeTask(i) {
+  console.log(i);
+
+  todos.splice(i, 1);
+  console.log(todos);
+
+  storeData();
+  renderTodos();
+}
+
+// ---------------------------------------------------------------- Toggled Status ------------------------------
+function toggleStatus(i) {
+  todos[i].status = !todos[i].status;
+  storeData();
+  renderTodos();
+}
+
+// ---------------------------------------------------------------- Reset Form ------------------------------
+function resetForm() {
+  document.querySelectorAll("input").forEach((input) => {
+    if (input.value !== "Submit") {
+      input.value = "";
+    }
+  });
+  document.querySelector("select").value = "low";
+}
+
+// ---------------------------------------------------------------- Edit Modal ------------------------------
+function updateTodo(i) {
+  let { name, age, task, priority } = todos[i];
+
+  document.getElementById("name").value = name;
+  document.getElementById("age").value = age;
+  document.getElementById("task").value = task;
+  document.getElementById("priority").value = priority;
+}

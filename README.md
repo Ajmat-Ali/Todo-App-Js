@@ -10,9 +10,9 @@ This is a responsive web application built using fundamental web technologies (H
 
 - ✅ **Task Creation:** Users can input a new task using a form.
 - ✅ **Dynamic Table Display:** New tasks are immediately rendered in a structured table format on the side.
-- 💾 **Local Storage:** Tasks will persist even after the browser is closed.
-- 💾 **Toggle Status** Status can be toggled as completed or pending
-- 🗑️ **(Coming Soon) To Perform CRUD Operations on Task** Ability to Create Task, Read Task, Update Task, and remove completed or unwanted tasks.
+- ✅ **Local Storage:** Tasks will persist even after the browser is closed.
+- ✅ **Toggle Status** Status can be toggled as completed or pending
+- ✅ **Perform CRUD Operations on Task** Ability to Create Task, Read Task, Update Task, and remove completed or unwanted tasks.
 
 ## Tech Stack
 
